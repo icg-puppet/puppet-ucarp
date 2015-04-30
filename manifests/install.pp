@@ -1,6 +1,6 @@
-class ucarp::install {
+class ucarp::install  {
   if $ucarp::params::manage_package {
-    Package {$ucarp::params::package_name:
+    package {$ucarp::params::package:
       ensure => $ucarp::params::package_ensure
     }
   }

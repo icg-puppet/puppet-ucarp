@@ -1,6 +1,7 @@
 define ucarp::vip (
     $id,
     $password,
+    $source_address,
     $bind_interface,
     $vip_address,
     $options
