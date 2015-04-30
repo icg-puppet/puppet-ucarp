@@ -2,7 +2,7 @@ define ucarp::vip (
     $id,
     $password,
     $bind_interface,
-    $vip_interface,
+    $vip_address,
     $options
 ) {
 
