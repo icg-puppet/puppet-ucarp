@@ -13,6 +13,7 @@ define ucarp::vip (
     ensure  => present,
     owner   => root,
     group   => root,
-    content => template("${module_name}/vip.conf.erb")
+    content => template("${module_name}/vip.conf.erb"),
+    notify  => Service[$ucarp::params::service_name]
   }
 }
