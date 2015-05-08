@@ -1,7 +1,7 @@
 class ucarp::service {
   if $ucarp::params::manage_service {
 
-    if $::osfamily = 'RedHat' and $::lsbmajdistrelease = '7' {
+    if $::osfamily == 'RedHat' and $::lsbmajdistrelease == '7' {
       #the ucarp package on rhel7 and variants 
       exec { "el7_networking_hack":
         path    => "/bin:/usr/bin:/usr/local/bin:/sbin:/usr/sbin:/usr/local/sbin",
