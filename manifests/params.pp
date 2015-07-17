@@ -8,7 +8,7 @@ class ucarp::params {
   case $::osfamily {
     redhat: {
       $config_dir     = '/etc/ucarp'
-      $service_name   = 'ucarp@.server'
+      $service_name   = 'ucarp@.service'
     }
     default: {
       fail("Unsupported platform: ${::osfamily}/${::operatingsystem}")
